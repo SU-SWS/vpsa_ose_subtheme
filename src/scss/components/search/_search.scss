@@ -23,7 +23,7 @@
     margin: 0 auto 3.5rem;
     max-width: 100rem;
 
-    @include grid-media-between('xs', 'md') {
+    @include grid-media-between('xs', 'lg') {
       @include centered-column;
     }
   }
@@ -47,6 +47,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+
     .su-homepage-search__input {
       @include modular-typography(2);
 
@@ -77,6 +78,7 @@
       &:focus {
         background: $su-color-lagunita-light;
         border-color: $su-color-lagunita;
+        box-shadow: 0 4px 4px 0 #00000040;
       }
     }
   }
