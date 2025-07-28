@@ -9,6 +9,10 @@
       $su-color-lagunita-light 100%
     );
 
+  @include grid-media-between('md', 'lg') {
+    background-size: contain;
+  }
+
   @include grid-media-between('xs', 'md') {
     @include responsive-spacing('padding', 8 null);
 
@@ -57,6 +61,7 @@
       height: 100%;
       min-height: 10rem;
       max-width: 100%;
+      margin: 0;
 
       &::placeholder {
         color: #707070;
