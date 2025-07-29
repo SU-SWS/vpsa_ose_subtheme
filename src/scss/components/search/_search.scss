@@ -51,6 +51,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    margin: 3.5rem 0;
+
+    @include grid-media-between('xs', 'sm') {
+      margin: 0;
+    }
 
     .su-homepage-search__input {
       @include modular-typography(2);
