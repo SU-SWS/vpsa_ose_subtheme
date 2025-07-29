@@ -33,14 +33,20 @@
   .su-homepage-search__label {
     @include modular-typography(3);
 
+    font-weight: $su-font-regular;
     color: $su-color-white;
     margin: 0 auto 1.3rem;
     width: fit-content;
-    max-width: 100%;
     text-align: left;
 
     @include grid-media-between('xs', 'sm') {
       text-align: center;
+    }
+
+    label {
+      width: fit-content;
+      max-width: 100%;
+      margin: 0;
     }
   }
 
