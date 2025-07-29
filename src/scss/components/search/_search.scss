@@ -2,7 +2,7 @@
   @include responsive-spacing('padding', 8 null 1 null);
 
   background: $su-color-lagunita-light;
-  background: url('../assets/svg/search_bg.svg') bottom right no-repeat,
+  background: url('../assets/svg/search_bg.svg') bottom center no-repeat,
     linear-gradient(
       90deg,
       $su-color-lagunita-dark 10%,
@@ -14,8 +14,6 @@
   }
 
   @include grid-media-between('xs', 'sm') {
-    @include responsive-spacing('padding', 8 null);
-
     background: linear-gradient(
       90deg,
       $su-color-lagunita-dark 10%,
@@ -39,9 +37,10 @@
     margin: 0 auto 1.3rem;
     width: fit-content;
     max-width: 100%;
+    text-align: left;
 
     @include grid-media-between('xs', 'sm') {
-      @include sr-only;
+      text-align: center;
     }
   }
 
@@ -96,10 +95,6 @@
   .ose-contact-us,
   .su-homepage-search__resources {
     display: block;
-
-    @include grid-media-between('xs', 'sm') {
-      display: none;
-    }
   }
 
   ul {
@@ -113,6 +108,11 @@
     max-width: 80rem;
     margin: 2.5rem auto;
     padding: 0;
+
+    @include grid-media-between('xs', 'sm') {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
   }
 
   li {
