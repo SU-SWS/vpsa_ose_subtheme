@@ -2,7 +2,7 @@
   @include responsive-spacing('padding', 8 null 1 null);
 
   background: $su-color-lagunita-light;
-  background: url('../assets/svg/search_bg.svg') bottom center no-repeat,
+  background: url('../assets/svg/search_bg.svg') bottom right no-repeat,
     linear-gradient(
       90deg,
       $su-color-lagunita-dark 10%,
@@ -114,6 +114,10 @@
     max-width: 80rem;
     margin: 2.5rem auto;
     padding: 0;
+
+    @include grid-media-between('md', 'lg') {
+      max-width: 35rem;
+    }
 
     @include grid-media-between('xs', 'sm') {
       flex-direction: column;
