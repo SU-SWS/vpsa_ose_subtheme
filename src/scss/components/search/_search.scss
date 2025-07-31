@@ -2,12 +2,14 @@
   @include responsive-spacing('padding', 8 null 1 null);
 
   background: $su-color-lagunita-light;
-  background: url('../assets/svg/search_bg.svg') bottom right no-repeat,
+  background: url('../assets/svg/search_bg.svg'),
     linear-gradient(
       90deg,
       $su-color-lagunita-dark 10%,
       $su-color-lagunita-light 100%
     );
+  background-position: right 15% bottom 0%;
+  background-repeat: no-repeat;
 
   @include grid-media-between('md', 'lg') {
     background-size: contain;
