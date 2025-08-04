@@ -67,6 +67,7 @@
     .su-homepage-search__input {
       @include modular-typography(2);
 
+      border: 1px solid $su-color-white;
       border-radius: 5rem;
       padding: 1.7rem 7.5rem 1.7rem 5.5rem;
       width: 100%;
@@ -74,6 +75,11 @@
       min-height: 10rem;
       max-width: 100%;
       margin: 0;
+      outline: revert;
+
+      &:focus-visible {
+        border-color: $su-color-stone;
+      }
 
       &::placeholder {
         color: #707070;
@@ -131,11 +137,6 @@
     margin: 0;
   }
 
-  a {
-    color: $su-color-white;
-    text-decoration: underline;
-  }
-
   a.ose-button {
     display: block;
     color: $su-color-white;
@@ -160,6 +161,16 @@
     font-style: italic;
     text-align: center;
     margin-top: 6.5rem;
+
+    a {
+      color: $su-color-white;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
 
     svg.mailto {
       display: none;
