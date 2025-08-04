@@ -67,7 +67,7 @@
     .su-homepage-search__input {
       @include modular-typography(2);
 
-      border: 1px solid $su-color-white;
+      border: 1px solid #002a31;
       border-radius: 5rem;
       padding: 1.7rem 7.5rem 1.7rem 5.5rem;
       width: 100%;
@@ -158,7 +158,6 @@
 
   .ose-contact-us {
     color: $su-color-white;
-    font-style: italic;
     text-align: center;
     margin-top: 6.5rem;
 
