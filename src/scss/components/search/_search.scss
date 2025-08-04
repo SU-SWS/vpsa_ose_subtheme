@@ -140,7 +140,7 @@
     display: block;
     color: $su-color-white;
     background: $su-color-lagunita;
-    border: 1px solid $su-color-lagunita-dark;
+    border: 1px solid #002a31;
     border-radius: 3rem;
     font-weight: $su-font-regular;
     padding: 8px 22px;
@@ -151,7 +151,6 @@
     &:hover,
     &:focus {
       background: $su-color-lagunita-light;
-      border-color: $su-color-lagunita;
       text-decoration: underline;
     }
   }
