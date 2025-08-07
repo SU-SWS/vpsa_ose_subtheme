@@ -149,10 +149,18 @@
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
+    &:after {
+      background-color: $su-color-white;
+    }
+
     &:hover,
     &:focus {
       background: $su-color-lagunita-light;
       text-decoration: underline;
+
+      &:after {
+        background-color: $su-color-white;
+      }
     }
   }
 
