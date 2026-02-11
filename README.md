@@ -8,6 +8,10 @@ Description
 
 VPSA OSE is a Stanford sub-theme that works with the Stanford Basic theme.
 
+Summary of customizations:
+1. Homepage search bar (developed by RH, designed by JT in 2025)
+2. 
+
 Documentation
 ---
 See subtheming guides and best practices here: 
